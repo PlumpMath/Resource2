@@ -7,6 +7,7 @@ package com.catherine.resource2;
  */
 
 public class Utils {
+    public static String myStaticField = "Default field";
 
     public static String getInputStringStatic(String value) {
         return value;
