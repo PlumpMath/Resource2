@@ -2,6 +2,7 @@ package com.catherine.resource2;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
@@ -21,7 +22,7 @@ public class MainActivity extends Activity {
     private void printHowClassLoaderWorks() {
         Log.i(TAG, "Load core java libraries by " + String.class.getClassLoader());
         Log.i(TAG, "Load user-defined classes by " + MainActivity.class.getClassLoader());
-//        Log.i(TAG, "Load user-defined libraries by " + AppCompatActivity.class.getClassLoader());//what you imported from gradle or libs/
+        Log.i(TAG, "Load user-defined libraries by " + AppCompatActivity.class.getClassLoader());//what you imported from gradle or libs/
         Log.i(TAG, "Default classLoader is " + getClassLoader());
         Log.i(TAG, "Default system classLoader is " + ClassLoader.getSystemClassLoader());
 
